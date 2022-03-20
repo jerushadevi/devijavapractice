@@ -1,14 +1,23 @@
+import java.util.Scanner;
 class Hello1
 {
     public static void main(String args[])
     {
-        int rollno=123;
-        String name="bitLabs";
-        char section='A';
-         String branch="Mech";
-         long phoneno=784596123;
-         String address="Vijayawada";
-         System.out.println("name="+name+"\nrollno="+rollno+"\nsection="+section+"\nbranch="+branch+"\nphoneno="+phoneno+"\naddress="+address);
-         
+        Scanner sc=new Scanner(System.in);
+        int age,weight;
+        System.out.println("enter age");
+         age=sc.nextInt();
+        System.out.println("Enter weight");
+         weight=sc.nextInt();
+       if(age>=18&&weight>=50)
+       
+           System.out.println("eligible for blood donation");
+    
+       else
+       
+           System.out.println("Not Eligble ");
+       
     }
 }
+
+
